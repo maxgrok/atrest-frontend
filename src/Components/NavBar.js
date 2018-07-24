@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-
+import {BrowserRouter as NavLink} from 'react-router-dom'
 export default class MenuExampleBasic extends Component {
   state = {}
 
@@ -15,8 +15,11 @@ export default class MenuExampleBasic extends Component {
           name='editorials'
           active={activeItem === 'editorials'}
           onClick={this.handleItemClick}
-        >
+        > <NavLink
+      to="/"
+    >
           Home
+          </NavLink>
         </Menu.Item>
 
         <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
