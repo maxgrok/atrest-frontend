@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React, { Component } from 'react'
 import { Search, Grid } from 'semantic-ui-react'
 
-class SearchExampleStandard extends Component {
+class SearchBox extends Component {
   componentWillMount() {
     this.resetComponent()
   }
@@ -31,6 +31,7 @@ class SearchExampleStandard extends Component {
     const { isLoading, value, results } = this.state
 
     return (
+      <div>
       <Grid>
         <Grid.Column width={6}>
           <Search
@@ -43,8 +44,9 @@ class SearchExampleStandard extends Component {
           />
         </Grid.Column>
       </Grid>
+      </div>
     )
   }
 }
 
-export default SearchExampleStandard;
+export default SearchBox;

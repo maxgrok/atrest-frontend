@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import NavBar from '../Components/NavBar';
-import Search from '../Components/Search';
+import SearchBox from '../Components/Search';
 
 class Home extends Component {
 	render() {
 		return (
 			<div>
 				<NavBar />
-				<Search />
+				<SearchBox />
 			</div>
 		);
 	}
 }
+
 export default Home;

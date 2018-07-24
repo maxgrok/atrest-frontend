@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Grid, Image } from 'semantic-ui-react'
 
 class PhotoAndProfilePic extends Component {
 
@@ -8,13 +9,20 @@ class PhotoAndProfilePic extends Component {
 
     render() {
         return (
-            <div>
-            	<img src="photo" alt="photo" />
-            	<img src="photo" alt="profilepic" />
-            	<img src="photo" alt="verified icon" />
-            	<img src="ratings" alt="rating stars" />
-            	<div>(1000 reviews)</div>
-            </div>
+           <Grid columns={2} divided>
+            <Grid.Row>
+              <Grid.Column>
+                <Image src='./room.png' />
+              </Grid.Column>
+              <Grid.Column>
+                <Image src='./profilePic.jpeg' />
+                <img src="photo" alt="profilepic" />
+                                    <img src="photo" alt="verified icon" />
+                                    <img src="ratings" alt="rating stars" />
+                                    <div>(1000 reviews)</div>
+              </Grid.Column>
+            </Grid.Row>
+  </Grid>
         );
     }
 }
