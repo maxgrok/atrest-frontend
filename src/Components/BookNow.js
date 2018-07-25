@@ -14,8 +14,9 @@ class BookNow extends Component {
 				 </div>
 				 <hr />
 				 <div> 
-				 Total: $55
+				 <strong>Total: $55</strong>
 				 </div>
+				 <hr/>
 				<Button primary>Book Now!</Button>
 			</div>
 		);

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import ListingsContainer from '../Components/ListingsContainer';
-import MapboxMap from '../Components/Map';
+import ListingsContainer from './ListingsContainer';
+import MapboxMap from './Map';
 
 class SecondPage extends Component {
 	render() {
 		return (
 			<div>
+				<ListingsContainer />
 				<MapboxMap />
 			</div>
 		);

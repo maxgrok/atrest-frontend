@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import { Grid, Image } from 'semantic-ui-react'
-
+import { Grid, Image } from 'semantic-ui-react';
+import welive from './welive_room.jpeg';
+import max from './photo.jpg';
+import verified from './verified.svg';
+import star from './star.svg'
 class PhotoAndProfilePic extends Component {
 
     constructor(props) {
@@ -12,17 +15,19 @@ class PhotoAndProfilePic extends Component {
            <Grid columns={2} divided>
             <Grid.Row>
               <Grid.Column>
-                <Image src='./room.png' />
+                <Image src={welive} />
               </Grid.Column>
               <Grid.Column>
-                <Image src='./profilePic.jpeg' />
-                <img src="photo" alt="profilepic" />
-                                    <img src="photo" alt="verified icon" />
-                                    <img src="ratings" alt="rating stars" />
-                                    <div>(1000 reviews)</div>
+              <img src={verified} style={{float: "right"}} alt="verified icon" width="50" height="50" />
+                <Image src={max} style={{borderRadius: "50%", float:"right"}} width="250" height="250"/>
+                <br /><br /><br /><br/><br/><br/><br/><br/><br/><br/><br/>
+                <Image src={star} style={{float:"right", marginRight:"-200px", marginBottom:"-100px"}} alt="rating stars" width="150" height="150"/>
+                <br /><br /><br /><br />
+                <a href="#" style={{float:"right"}}>(1000 reviews)</a>
               </Grid.Column>
+
             </Grid.Row>
-  </Grid>
+        </Grid>
         );
     }
 }
