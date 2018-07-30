@@ -26,7 +26,6 @@ class ListingsContainer extends Component {
 	render() {
 		return (
 			<div>
-				<SearchExampleStandard source={this.state.listings} />
 				{this.state.listings.map(listing =>{
 					return <Listing key={listing.id} listing={listing} />
 				})

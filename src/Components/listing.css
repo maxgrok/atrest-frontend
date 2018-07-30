@@ -1,0 +1,12 @@
+#listing{
+	list-style-type: none;
+}
+
+.link{
+	text-decoration: none;
+	color:black;
+}
+
+.link:hover{
+	color:green;
+}

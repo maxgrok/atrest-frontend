@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
 import { Search, Grid } from 'semantic-ui-react'
+import '../Pages/home.css' 
 
 class SearchBox extends Component {
   componentWillMount() {
@@ -35,6 +36,7 @@ class SearchBox extends Component {
       <Grid>
         <Grid.Column width={6}>
           <Search
+            className="search"
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
             onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}

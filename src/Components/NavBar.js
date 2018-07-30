@@ -11,6 +11,7 @@ export default class MenuExampleBasic extends Component {
 
     return (
       <Menu>
+        <a href="/">
         <Menu.Item
           name='editorials'
           active={activeItem === 'editorials'}
@@ -18,14 +19,17 @@ export default class MenuExampleBasic extends Component {
         >
           Home
         </Menu.Item>
+        </a>
+        <a href="/search">
         <Menu.Item
-        name="search" 
-        active={activeItem=== 'search'}
+        name="all_listings" 
+        active={activeItem=== 'allListings'}
         onClick={this.handleItemClick}
         >
-        Search
+        All Listings
         </Menu.Item>
-        <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
+        </a>
+        {/*<Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
           Login
         </Menu.Item>
 
@@ -35,7 +39,7 @@ export default class MenuExampleBasic extends Component {
           onClick={this.handleItemClick}
         >
           Sign Up
-        </Menu.Item>
+        </Menu.Item>}*/}
       </Menu>
     )
   }
