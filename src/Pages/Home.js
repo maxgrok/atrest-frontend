@@ -14,12 +14,12 @@ class Home extends Component {
 		return (
 			<div>
 				<NavBar />
-				<Container>
+				<div style={{margin: "0 auto", width: "15%", paddingTop:"15%"}}>
 					<form onSubmit={this.handleSubmit} >
 					<input />
 					<Link to ="/search" ><button type="submit">Search</button></Link>
 					</form>
-				</Container>
+				</div>
 			</div>
 		);
 	}

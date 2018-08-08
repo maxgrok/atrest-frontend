@@ -29,6 +29,15 @@ export default class MenuExampleBasic extends Component {
         All Listings
         </Menu.Item>
         </a>
+           <a href="/create">
+        <Menu.Item
+        name="create_new_listing" 
+        active={activeItem=== 'createNewListing'}
+        onClick={this.handleItemClick}
+        >
+        Create New Listing
+        </Menu.Item>
+        </a>
         {/*<Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
           Login
         </Menu.Item>
